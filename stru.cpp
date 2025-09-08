@@ -15,7 +15,7 @@ public:
         cout << x << " " << y << endl;
     }
     
-    // Destructor
+    
     ~Point() {
         cout << "destroyed point variable" << endl;
     }
