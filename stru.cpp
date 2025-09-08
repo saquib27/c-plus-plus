@@ -1,28 +1,32 @@
 #include <iostream>
 using namespace std;
 
-struct Point {
+struct Point
+{
 private:
     int x, y;
-public:
 
-    Point(int a, int b) {
+public:
+    Point(int a, int b)
+    {
         x = a;
         y = b;
     }
-    
-    void show() {
+
+    void show()
+    {
         cout << x << " " << y << endl;
     }
-    
-    
-    ~Point() {
+
+    ~Point()
+    {
         cout << "destroyed point variable" << endl;
     }
 };
 
-int main() {
-    Point s1 (1,1);
+int main()
+{
+    Point s1(1, 1);
     Point s2(99, 1001);
 
     s1.show();
